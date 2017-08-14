@@ -57,4 +57,4 @@ end
 
 ## Implementations
 
-* **Day 1** - [Java, Recursive, No Libs](day1)
+* **Day 1** - [Java, Recursive, No Libs](day_1)
