@@ -53,12 +53,3 @@ def test_chop
 end
 ```
 
-## Requirements
-* JDK 1.8+
-* Maven 3.3+
-
-## Instructions
-```
-git clone https://github.com/DewaldV/kata02-karate-chop
-mvn test
-```
