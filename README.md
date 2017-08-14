@@ -29,7 +29,7 @@ You can assume that the array has less than 100,000 elements. For the purposes o
 Test Data
 Here is the Test::Unit code I used when developing my methods. Feel free to add to it. The tests assume that array indices start at zero. You’ll probably have to do a couple of global search-and-replaces to make this compile in your language of choice (unless your enlightened choice happens to be Ruby).
 
-```python
+```ruby
 def test_chop
   assert_equal(-1, chop(3, []))
   assert_equal(-1, chop(3, [1]))
