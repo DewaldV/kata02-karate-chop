@@ -1,22 +1,20 @@
 # test_chop.py
 
-def chop(value, values):
+def chop(value, int_array):
     start = 0
     end   = len(values) - 1
 
     while(end >= start):
         mid_idx = (start + end) / 2
-        mid_val = values[mid_idx]
 
-        if mid_val == value:
+        if mid_val == int_array[mid_idx]:
             return mid_idx
-        elif value > mid_val:
+        elif value > int_array[mid_idx]:
             start = mid_idx + 1
         else:
             end = mid_idx - 1
 
     return -1
-
 
 def test_karate_chop():
     assert chop(3, [])  == -1
