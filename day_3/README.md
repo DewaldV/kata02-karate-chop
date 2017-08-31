@@ -1,10 +1,8 @@
-# Day 3 - Ruby, Recursive, No Libraries
+# Day 3 - Ruby, Recursive
 
 **Language**: Ruby
 
 **Style**: Recursive
-
-**Restrictions**: No Libraries   
 
 ## Requirements
 * Ruby 2.4.1

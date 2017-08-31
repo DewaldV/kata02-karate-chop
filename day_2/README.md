@@ -1,10 +1,8 @@
-# Day 2 - Python, Iterative, No Libraries
+# Day 2 - Python, Iterative
 
 **Language**: Python
 
 **Style**: Iterative
-
-**Restrictions**: No Libraries   
 
 ## Requirements
 * Python 3.6+

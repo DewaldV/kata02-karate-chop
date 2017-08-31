@@ -57,5 +57,6 @@ end
 
 ## Implementations
 
-* **Day 1** - [Java, Recursive, No Libs](day_1)
-* **Day 2** - [Python, Iterative, No Libs](day_2)
+* **Day 1** - [Java, Recursive](day_1)
+* **Day 2** - [Python, Iterative](day_2)
+* **Day 3** - [Ruby, Recursive](day_3)

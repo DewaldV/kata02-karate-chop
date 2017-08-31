@@ -1,10 +1,8 @@
-# Day 1 - Java, Recursive, No Libraries
+# Day 1 - Java, Recursive
   
 **Language**: Java
   
 **Style**: Recursive
-
-**Restrictions**: No Libraries   
 
 ## Requirements
 * JDK 1.8
