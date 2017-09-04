@@ -1,37 +1,41 @@
 # test_chop.py
+import pytest
 
-def chop(value, int_array):
+def chop(search_val, numbers):
     start = 0
-    end   = len(values) - 1
+    end   = len(numbers) - 1
 
     while(end >= start):
-        mid_idx = (start + end) / 2
+        mid = (start + end) // 2
 
-        if mid_val == int_array[mid_idx]:
-            return mid_idx
-        elif value > int_array[mid_idx]:
-            start = mid_idx + 1
+        if search_val == numbers[mid]:
+            return mid
+        elif search_val > numbers[mid]:
+            start = mid + 1
         else:
-            end = mid_idx - 1
+            end = mid - 1
 
     return -1
 
-def test_karate_chop():
-    assert chop(3, [])  == -1
-    assert chop(3, [1]) == -1
-    assert chop(1, [1]) == 0
-    assert chop(3, [1, 3, 5]) == 1
-    assert chop(5, [1, 3, 5]) == 2
-    assert chop(0, [1, 3, 5]) == -1
-    assert chop(2, [1, 3, 5]) == -1
-    assert chop(4, [1, 3, 5]) == -1
-    assert chop(6, [1, 3, 5]) == -1
-    assert chop(1, [1, 3, 5, 7]) == 0
-    assert chop(3, [1, 3, 5, 7]) == 1
-    assert chop(5, [1, 3, 5, 7]) == 2
-    assert chop(7, [1, 3, 5, 7]) == 3
-    assert chop(0, [1, 3, 5, 7]) == -1
-    assert chop(2, [1, 3, 5, 7]) == -1
-    assert chop(4, [1, 3, 5, 7]) == -1
-    assert chop(6, [1, 3, 5, 7]) == -1
-    assert chop(8, [1, 3, 5, 7]) == -1
+@pytest.mark.parametrize("expected,search_val,numbers", [
+    (-1, 3, []),
+    (-1, 3, [1]),
+    (0, 1, [1]),
+    (1, 3, [1, 3, 5]),
+    (2, 5, [1, 3, 5]),
+    (-1, 0, [1, 3, 5]),
+    (-1, 2, [1, 3, 5]),
+    (-1, 4, [1, 3, 5]),
+    (-1, 6, [1, 3, 5]),
+    (0, 1, [1, 3, 5, 7]),
+    (1, 3, [1, 3, 5, 7]),
+    (2, 5, [1, 3, 5, 7]),
+    (3, 7, [1, 3, 5, 7]),
+    (-1, 0, [1, 3, 5, 7]),
+    (-1, 2, [1, 3, 5, 7]),
+    (-1, 4, [1, 3, 5, 7]),
+    (-1, 6, [1, 3, 5, 7]),
+    (-1, 8, [1, 3, 5, 7])
+])
+def test_karate_chop(expected, search_val, numbers):
+    assert chop(search_val, numbers) == expected
