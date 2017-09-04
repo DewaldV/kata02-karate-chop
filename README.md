@@ -60,3 +60,4 @@ end
 * **Day 1** - [Java, Recursive](day_1)
 * **Day 2** - [Python, Iterative](day_2)
 * **Day 3** - [Ruby, Recursive](day_3)
+* **Day 4** - [Golang, Iterative](day_4)
