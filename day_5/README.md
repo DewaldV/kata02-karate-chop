@@ -1,14 +1,15 @@
-# Day 5 - Clojure, Recursive
+# Day 5 - Python, Recursive: Slice
 
-**Language**: Clojure
+**Language**: Python
 
-**Style**: Recursive
+**Style**: Recursive, Slice
 
 ## Requirements
-* JDK 1.8
-* Leiningen 2.0+
+* Python 3.6+
+* pytest
 
 ## Instructions
 ```
-lein test
+pip install -r requirements.txt
+pytest
 ```
